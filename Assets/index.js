@@ -96,6 +96,7 @@ let score = 0
 let currentQuiz = 0
 
 loadQuiz()
+
 /*Function to update new question*/
 
 function loadQuiz(){
@@ -110,4 +111,17 @@ function loadQuiz(){
     d_txt.innerText = currentQuizData.d
 
 }
+ 
+/*Function to check selected answer*/
 
+function getSelected() {
+     /*var to store selected option*/
+     let answer
+     /*loop through all radio buttons and get selected value*/
+     answerSelect.forEach(answerEl => {
+         if(answerEl.checked){
+             answer = answerEl.id
+         }
+     })
+     return answer
+}
