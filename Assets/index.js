@@ -125,3 +125,7 @@ function getSelected() {
      })
      return answer
 }
+/**function to deselect answers */
+function unselectAnswers() {
+    answerSelect.forEach(answerEl => answerEl.checked = false)
+}
