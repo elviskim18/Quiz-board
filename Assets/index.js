@@ -94,3 +94,20 @@ const d_txt = document.getElementById('a_txt')
 /*Initialize score to zero & current quiz questions to 0 */
 let score = 0
 let currentQuiz = 0
+
+loadQuiz()
+/*Function to update new question*/
+
+function loadQuiz(){
+    unselectAnswers()
+     /*assign current quiz data to quiz info and pass current quiz as currentQuiz as index*/
+    const currentQuizData = quizInfo[currentQuiz]
+     /*assign question and answer fields with data from quizdata*/ 
+    questionSelect.innertext = currentQuizData.question
+    a_txt.innertext = currentQuizData.a
+    b_txt.innerText = currentQuizData.b
+    c_txt.innerText = currentQuizData.c
+    d_txt.innerText = currentQuizData.d
+
+}
+
