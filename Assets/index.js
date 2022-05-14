@@ -80,4 +80,13 @@ const quizInfo = [
         d: "High-level",
         right: a,
     }
-]
+];
+
+/*assign elements to variables*/
+const quiz=document.getElementById('quiz')
+const answerSelect = document.querySelectorAll('.answer')
+const questionSelect = document.getElementById('question')
+const a_txt = document.getElementById('a_txt')
+const b_txt = document.getElementById('a_txt')
+const c_txt = document.getElementById('a_txt')
+const d_txt = document.getElementById('a_txt')
