@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&family=Nunito:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 *{
     font-family: 'Roboto Flex', sans-serif;
-    color: aqua;
+    
 }
 body{
     margin: 0;
-    background-color: black;
+    background-color: blanchedalmond;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,19 +16,36 @@ body{
     background-color: white;
     width: 700px;
     height: 50vh;
+    border-radius: 20px;
 }
 form{
     font-size: 2em;
+
 }
 form h1{
-    color: blueviolet;
+    color: black;
     text-align: center;
+    
+
 }
 label{
     cursor: pointer;
 }
 .answer{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr 1fr;
+}
+label{
+    margin: 0;
+}
+button{
+    padding: 2em;
+    border: none;
+    display: block;
+    color: black;
+    width: 100%;
+    background-color: greenyellow;
 
+
+    
 }
