@@ -129,3 +129,24 @@ function getSelected() {
 function unselectAnswers() {
     answerSelect.forEach(answerEl => answerEl.checked = false)
 }
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizInfo[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizInfo.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Reload</button>
+           `
+       }
+    }
+})
