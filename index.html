@@ -4,29 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Assets/index.css">
-    <title>Quiz App</title>
+    <link rel="stylesheet" href="./Assets/index.css">
+    <title>quiz</title>
 </head>
 <body>
-    <div class="quizContainer" id="quiz">  
-        <form >
-            <h1 id="question"></h1>
-
-            <input type="radio" name="answer" id="a" class="answer">
-            <label for="a" id="a_txt"></label>
-
-            <input type="radio" name="answer" id="b" class="answer">
-            <label for="b" id="b_txt"></label>
-
-            <input type="radio" name="answer" id="c" class="answer">
-            <label for="c" id="c_txt"></label>
-
-            <input type="radio" name="answer" id="d" class="answer">
-            <label for="d" id="d_txt"></label>
-        </form>
-        <button id="submit">SUBMIT</button>
+    <div class="container">
+        <div class="logo">
+            <img src="./Assets/Images/learn.jpg" alt="study">
+            
+        </div>
+        <h3>QUICK QUIZES</h3>
+        <p> Take Our quizes that will help you improve your HTML, CSS and Javascript knowledge</p>
+        <div class="date">
+            <div id="currentDate"></div>
+        </div>
+        <button class="buttonstart"><a href="/Assets/pages/quiz.html">Try Quiz</a></button>
     </div>
-
- <script src="./Assets/quiz.js"></script> 
+    <script src="./Assets/quiz.js"></script>
 </body>
 </html>
