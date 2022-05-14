@@ -90,3 +90,7 @@ const a_txt = document.getElementById('a_txt')
 const b_txt = document.getElementById('a_txt')
 const c_txt = document.getElementById('a_txt')
 const d_txt = document.getElementById('a_txt')
+
+/*Initialize score to zero & current quiz questions to 0 */
+let score = 0
+let currentQuiz = 0
