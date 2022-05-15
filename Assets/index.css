@@ -80,12 +80,18 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-
-
-
+.ansOption{
+    display: inline-flex;
+    padding: 10px;
+    background-color: rgb(229, 243, 107);
+}
+.ansOption:hover{
+    background-color: pink;
+}
 h1{
     color: black;
     text-align: center;
+    
 }
 label{
     cursor: pointer;
