@@ -76,16 +76,16 @@ body{
     width: 700px;
     height: 50vh;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-form{
-    font-size: 2em;
 
-}
-form h1{
+
+
+h1{
     color: black;
     text-align: center;
-    
-
 }
 label{
     cursor: pointer;
