@@ -39,7 +39,7 @@ languages used are:
     -
 ### Description
 I used html in creating the page structure and css in styling the page.I also used javascript to make the site dynamic and create some complex fucntions such as grading and getting array questions. I also used google fonts to get external fonts
-- $link: https://fonts.googleapis.com/css2?family=Kurale&family=Nunito:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap
+- link: https://fonts.googleapis.com/css2?family=Kurale&family=Nunito:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap
 
 ### Challenges
 My main challenge was making the question count responsive
