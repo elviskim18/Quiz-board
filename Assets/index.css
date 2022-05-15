@@ -45,6 +45,9 @@
 #buttonstart:hover{
     background-color: black;
 }
+#buttonstart:active{
+    color: yellow;
+}
 .date{
     margin-top: 0;
     display: flex;
