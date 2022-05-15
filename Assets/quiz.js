@@ -153,6 +153,7 @@ submitBtn.addEventListener('click', () => {
 })
 /*
 80
+70
 50
 less than 50
  
