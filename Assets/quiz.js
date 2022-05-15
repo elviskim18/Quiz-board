@@ -1,6 +1,3 @@
-
-
-
 /*Quiz data in an array as objects*/
 const quizInfo = [
     {
