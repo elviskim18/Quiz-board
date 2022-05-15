@@ -46,7 +46,6 @@ My main challenge was making the question count responsive
 
 *** 
 ## How to set up and run the project
-<<<<<<< HEAD
 #### method one
 clone the repo using the command
 - $git clone https://github.com/elviskim18/Quiz-board.git
