@@ -163,16 +163,16 @@ function calGrade(score){
     var temp = score*10;
     var grade;
     if(temp <= 100 && temp >=80 ){
-        grade='A'
+        grade='A'+ " " + "Excellent"
     }
     else if(temp <=79 && temp >=70){
-        grade='B'
+        grade='B' + " " + "Good"
     }
     else if(temp <=69 && temp >=60){
-        grade='C'
+        grade='C' + " " + "Fair"
     }
     else if(temp <=59 && temp >=50){
-        grade='D'
+        grade='D' + " " + "Improve"
     }
     else if(temp < 50){
         grade = 'E kindly retake'
