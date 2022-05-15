@@ -6,7 +6,7 @@ const quizInfo = [
         b: "1995",
         c: "1994",
         d: "1990",
-        right: b,
+        right: "b",
     },
     {
         question: "HTML Tags are case sensetive",
@@ -14,7 +14,7 @@ const quizInfo = [
         b: "True",
         c: "Only in HTML5",
         d: "NOt in HTML5",
-        right: b,
+        right: "b",
     },
     {
         question: "Which is the correct CSS syntax?",
@@ -22,7 +22,7 @@ const quizInfo = [
         b: "Body:color=black",
         c: "{body;color:black}",
         d: "{body:color=black(body)}",
-        right: a,
+        right: "a",
     },
     {
         question: "What tag is used to break?",
@@ -30,7 +30,7 @@ const quizInfo = [
         b: "<span>",
         c: "<a>",
         d: "<em>",
-        right: a,
+        right: "a",
     },
     {
         question: "Javascript language is?",
@@ -38,7 +38,7 @@ const quizInfo = [
         b: "Object-based",
         c: "Assembly language",
         d: "High-level",
-        right: a,
+        right: "a",
     },
     {
         question: "Who is making the web standards",
@@ -46,7 +46,7 @@ const quizInfo = [
         b: "Microsoft",
         c: "Apple",
         d: "The world Wide Web consortium",
-        right: d,
+        right: "d",
     },
     {
         question: "Which language runs in a web browser?",
@@ -70,7 +70,7 @@ const quizInfo = [
         b: "<br>",
         c: "<img>",
         d: "<h1>",
-        right: c,
+        right: "c",
     },
     {
         question: "What does HTML stand for?",
@@ -127,7 +127,7 @@ function getSelected() {
     return answer
 }
 
-/*submit button*/
+/*function to listen to submit button and give grading*/
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     if(answer) {
@@ -142,7 +142,7 @@ submitBtn.addEventListener('click', () => {
        } else {
 
            quiz.innerHTML = `
-           <h2>You have scored ${calGrade(score)} of ${score*25}% questions correctly</h2>
+           <h2>You Grade is: ${calGrade(score)} : (${score*10}%) </h2>
 
            <button onclick="location.reload()">Reload</button>
            `
@@ -153,23 +153,29 @@ submitBtn.addEventListener('click', () => {
 80
 50
 less than 50
-
+ 
 
 */
 
 
-
+/*function to calculate grades*/
 function calGrade(score){
-    var temp=score*25;
+    var temp = score*10;
     var grade;
     if(temp <= 100 && temp >=80 ){
         grade='A'
     }
-    else if(temp<39){
-        grade='F'
+    else if(temp <=79 && temp >=70){
+        grade='B'
     }
-    else{
-        grade = 'E'
+    else if(temp <=69 && temp >=60){
+        grade='C'
+    }
+    else if(temp <=59 && temp >=50){
+        grade='D'
+    }
+    else if(temp < 50){
+        grade = 'E kindly retake'
     }
     return grade;
 
