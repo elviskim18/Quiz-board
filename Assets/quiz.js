@@ -95,6 +95,7 @@ const submitBtn = document.getElementById('submit')
 /*Initialize score to zero & current quiz questions to 0 */
 let currentQuiz = 0
 let score = 0
+let questionCounter = 0
 
 loadQuiz()
 /*Function to update new question*/
@@ -102,8 +103,9 @@ function loadQuiz() {
 
     unselectAnswers()
 /*assign current quiz data to quiz info and pass current quiz as currentQuiz as index*/
-    const currentQuizData = quizInfo[currentQuiz]
 
+    const currentQuizData = quizInfo[currentQuiz]
+    
     questionSelect.innerText = currentQuizData.question
     a_txt.innerText = currentQuizData.a
     b_txt.innerText = currentQuizData.b

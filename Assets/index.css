@@ -81,10 +81,19 @@ body{
     justify-content: space-between;
     box-shadow: 5px 10px 20px #888888;
 }
+.questionNumber{
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
 .ansOption{
     display: inline-flex;
     padding: 10px;
     background-color: rgb(229, 243, 107);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
 .ansOption:hover{
     background-color: pink;
