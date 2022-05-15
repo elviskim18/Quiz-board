@@ -1,3 +1,6 @@
+
+
+
 /*Quiz data in an array as objects*/
 const quizInfo = [
     {
@@ -83,6 +86,7 @@ const quizInfo = [
     
 ];
 /*assign elements to variables*/
+
 const quiz= document.getElementById('quiz')
 const answerSelect = document.querySelectorAll('.answer')
 const questionSelect = document.getElementById('question')
@@ -91,6 +95,7 @@ const b_txt = document.getElementById('b_txt')
 const c_txt = document.getElementById('c_txt')
 const d_txt = document.getElementById('d_txt')
 const submitBtn = document.getElementById('submit')
+
 
 /*Initialize score to zero & current quiz questions to 0 */
 let currentQuiz = 0
@@ -144,7 +149,7 @@ submitBtn.addEventListener('click', () => {
        } else {
 
            quiz.innerHTML = `
-           <h2>You Grade is: ${calGrade(score)} : (${score*10}%) </h2>
+           <h2>Your Grade is: ${calGrade(score)} : (${score*10}%) </h2>
 
            <button onclick="location.reload()">Reload</button>
            `
@@ -185,3 +190,15 @@ function calGrade(score){
 } 
 
   
+/*get current data and time*/
+const d = new Date();
+document.getElementById("currentDate").innerHTML = d;
+
+/*confirm page to proceed to page two*/
+function doConfirm() {  
+    if(confirm ("You will be redirected to the quiz page "))
+    {
+      window.location.href="./Assets/pages/quiz.html";
+    }
+    }  
+
