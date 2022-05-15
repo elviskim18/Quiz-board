@@ -74,7 +74,7 @@ body{
 .quizContainer{
     background-color: white;
     width: 700px;
-    height: 50vh;
+    height: 60vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -94,9 +94,17 @@ h1{
     text-align: center;
     
 }
-label{
-    cursor: pointer;
-}
+input[type="radio"] {
+    display: none;
+  }
+input[type="radio"] + label{
+      cursor: pointer;
+  }
+input[type="radio"]:checked + label {
+    border: none;
+    background-color: rgb(36, 184, 60);
+    padding: 10px;
+  }
 .answer{
     display: grid;
     grid-template-rows: 1fr 1fr  1fr 1fr;
