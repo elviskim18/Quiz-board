@@ -53,7 +53,7 @@ change directory using command
 - $cd quiz-board
 
 #### method two
- - run the following live link in your browser 
+ - run the following live link in your browser https://elviskim18.github.io/Quiz-board/
 
 
 ***
