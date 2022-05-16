@@ -81,7 +81,7 @@ body{
     justify-content: space-between;
     box-shadow: 5px 10px 20px #888888;
 }
-.questionNumber{
+#questionNumber{
     font-size: large;
     font-weight: bold;
     margin: 10px;
@@ -132,4 +132,23 @@ button{
 }
 button:hover{
     background-color: rgb(124, 71, 80);
+}
+@media screen and (max-width: 760px) {
+    .container{
+        width: 95%;
+    }
+    .logo img{
+        width: 30vw;
+        margin-top: 5px;
+    }
+    .container p{
+        font-size: 1.5em;
+        
+    }
+    .date{
+        width: 70vw;
+    }
+    .quizContainer{
+        width: 95%;
+    }
 }

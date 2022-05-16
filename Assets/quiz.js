@@ -1,9 +1,7 @@
-
-
-
 /*Quiz data in an array as objects*/
 const quizInfo = [
     {
+
         question: "What year was Javascript launched?",
         a: "1996",
         b: "1995",
@@ -86,8 +84,8 @@ const quizInfo = [
     
 ];
 /*assign elements to variables*/
-
 const quiz= document.getElementById('quiz')
+
 const answerSelect = document.querySelectorAll('.answer')
 const questionSelect = document.getElementById('question')
 const a_txt = document.getElementById('a_txt')
@@ -100,7 +98,14 @@ const submitBtn = document.getElementById('submit')
 /*Initialize score to zero & current quiz questions to 0 */
 let currentQuiz = 0
 let score = 0
-let questionCounter = 0
+
+function questionCount(){
+    var countNo = quizInfo.indexOf("question", +1)
+    
+    document.getElementById('questionNumber').innerHTML = "Question" +  countNo + "of" + " " + quizInfo.length;
+    
+}
+questionCount();
 
 loadQuiz()
 /*Function to update new question*/
@@ -108,7 +113,7 @@ function loadQuiz() {
 
     unselectAnswers()
 /*assign current quiz data to quiz info and pass current quiz as currentQuiz as index*/
-
+    
     const currentQuizData = quizInfo[currentQuiz]
     
     questionSelect.innerText = currentQuizData.question
@@ -143,6 +148,7 @@ submitBtn.addEventListener('click', () => {
        }
 
        currentQuiz++
+       /*var currentq=currentQuiz++;*/
 
        if(currentQuiz < quizInfo.length) {
            loadQuiz()
